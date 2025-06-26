@@ -4,53 +4,61 @@
   <meta charset="UTF-8">
   <title>Beti & Fran NOS CASAMOS</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
-      background: #000;
-      color: #f0f;
-      font-family: 'Montserrat', sans-serif;
+      background: url('https://i.imgur.com/3kx0EVe.jpg') center center / cover no-repeat;
+      color: #ff00cc;
+      font-family: 'Staatliches', sans-serif;
       text-align: center;
     }
     h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
       margin-top: 2rem;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px #000;
     }
     #countdown {
       font-size: 2rem;
       margin: 1rem;
+      text-shadow: 1px 1px #000;
     }
     #map {
       width: 90%;
       height: 300px;
-      margin: 1rem auto;
-      border: 2px solid #f0f;
+      margin: 2rem auto;
+      border: 2px dashed #ff00cc;
+      box-shadow: 0 0 10px #ff00cc;
     }
     #rsvp {
       margin: 2rem auto;
     }
-    input, button {
-      padding: 0.8rem;
-      margin: 0.5rem;
-      font-size: 1rem;
-    }
-    button {
-      background: #f0f;
+    a button {
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      background: #ff00cc;
       color: #000;
       border: none;
+      border-radius: 10px;
+      box-shadow: 2px 2px #000;
       cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    a button:hover {
+      transform: scale(1.05);
     }
     footer {
       margin: 3rem 0;
-      font-size: 1.2rem;
+      font-size: 1.5rem;
+      text-shadow: 1px 1px #000;
     }
   </style>
 </head>
 <body>
 
-  <h1>Beti & Fran<br><span style="font-size:1.5rem">NOS CASAMOS</span></h1>
+  <h1>Beti & Fran<br><span style="font-size:2rem">NOS CASAMOS</span></h1>
   <div id="countdown">Cargando cuenta regresiva...</div>
 
   <div id="map">
@@ -62,12 +70,9 @@
 
   <div id="rsvp">
     <h2>Confirmá tu asistencia</h2>
-    <form action="https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse" method="POST" target="_blank">
-      <input type="text" name="entry.123456" placeholder="Tu nombre" required><br>
-      <label><input type="radio" name="entry.654321" value="Sí" required> Sí</label>
-      <label><input type="radio" name="entry.654321" value="No" required> No</label><br>
-      <button type="submit">Enviar RSVP</button>
-    </form>
+    <a href="https://wa.me/5491151087069?text=¡Hola!%20Confirmo%20mi%20asistencia%20a%20la%20boda%20de%20Beti%20y%20Fran." target="_blank">
+      <button>Confirmar por WhatsApp</button>
+    </a>
   </div>
 
   <footer>¡Te esperamos!</footer>
